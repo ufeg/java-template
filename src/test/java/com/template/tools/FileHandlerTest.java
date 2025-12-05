@@ -14,10 +14,7 @@ public class FileHandlerTest {
 
         List<String> list = FileHandler.openFileFromPath(path);
 
-        for (String line : list){
-            System.out.println(line);
-        }
-
+        Assertions.assertThat(list.size()).isNotZero();
         Assertions.assertThat(list).isInstanceOf(List.class);
     }
 
