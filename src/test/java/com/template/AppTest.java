@@ -2,7 +2,6 @@ package com.template;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
@@ -13,7 +12,7 @@ public class AppTest
 {
     @Test
     void doit_retourner_true(){
-        assertTrue(true);
+        assertThat(true).isTrue();
     }
 
 }
